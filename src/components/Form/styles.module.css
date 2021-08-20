@@ -1,0 +1,64 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.input {
+  padding: 10px 10px;
+  border-radius: 8px;
+  border: 1px solid #dadce0;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.input:focus:not(:active) {
+  border: 1px solid #4285f4;
+}
+
+.button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.buttonActive {
+  transition: background-color 0.5s linear;
+  background-color: #4285f4;
+  color: #fff;
+}
+
+.buttonActive:hover {
+  transition: opacity 0.2s linear;
+  opacity: 0.7;
+}
+
+.buttonDisabled {
+  transition: background-color 0.3s linear;
+  background-color: #fafafa;
+  color: #000;
+  cursor: default;
+}
+
+.button:focus {
+  border: 1px solid #193663;
+}
+
+.error {
+  font-size: 14px;
+  color: #ee3465;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .input {
+    width: 100%;
+    margin-right: 20px;
+  }
+}

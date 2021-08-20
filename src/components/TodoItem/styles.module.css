@@ -1,0 +1,38 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.itemLabel {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox {
+  margin-right: 20px;
+}
+
+.text {
+  margin: 0;
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+.deleteButton {
+  background-image: url('../../images/trash-icon.svg');
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  transition: background-image 0.5s linear;
+  background-image: url('../../images/trash-icon-active.svg');
+}
